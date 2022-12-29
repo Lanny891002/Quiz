@@ -1,0 +1,551 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+  <!--   地板 -->
+  <div class="floor"></div>
+
+  <!--   地板(上) -->
+  <div class="floorup"></div>
+
+  <!--   幼兒園房子 -->
+  <div class="Nursery-house">
+    <img src="https://lanny891002.github.io/Quiz/Nursery-house.png" id="Nursery-house">
+  </div>
+
+  <!-- 題目1 -->
+  <div class="quiz">
+    <div class="quiz1" id="quiz1" style="display:block">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>1. 幼兒園直接由園長一人決定、規劃和執行所有園務工作，必定是最有效率能達到優質管理的方法。</h2>
+
+      <button class="button1" onclick="answer1_no()">是</button>
+      <button class="button2" onclick="answer1_yes()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析1 -->
+  <div class="answer">
+    <div class="answer1" id="answer1">
+
+      <!--       答對1 -->
+      <div id="yes1" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>透過幼兒園全員參與，有系統地進行統整規劃和逐步落實，才能有效的提升幼兒園優質管理之整體品質。</h3>
+          <button class="buttonclose" onclick="close_answer1()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯1 -->
+      <div id="no1" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>由園長一人自己規劃和決定，不一定是最有效率的方法~園長整合園內成員之力量與所有可運用之資源，有系統地進行統整規劃和逐步落實，才能有效的提升幼兒園優質管理之整體品質。
+          </h3>
+          <button class="buttonclose" onclick="close_answer1()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   箱子 -->
+  <div id="box" style="display:none">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/gzcbkoye.json" trigger="click" colors="primary:#d59f80" style="width:550px;height:550px" onclick="box()">
+    </lord-icon>
+  </div>
+
+  <!--   小OPDCA -->
+  <div class="small-o" style="display:none">O</div>
+  <div class="small-p" style="display:none">P</div>
+  <div class="small-d" style="display:none">D</div>
+  <div class="small-c" style="display:none">C</div>
+  <div class="small-a" style="display:none">A</div>
+
+  <!--   點擊箱子以繼續進行 -->
+  <div class="tip-text1" style="display:none">點擊箱子以繼續進行</div>
+
+  <!--   O圖形 -->
+  <div class="O" style="display:none">O</div>
+
+  <!-- 題目2 -->
+  <div class="quiz">
+    <div class="quiz2" id="quiz2" style="display:none">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>2. 系統化運作流程中的「O」，是代表「原始」之意。</h2>
+
+      <button class="button1" onclick="answer2_no()">是</button>
+      <button class="button2" onclick="answer2_yes()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析2 -->
+  <div class="answer">
+    <div class="answer2" id="answer2">
+
+      <!--       答對2 -->
+      <div id="yes2" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>「O」是代表「目標」（Object）之意，有明確且正確的發展目標（O）才能確認後續計畫執行之方向。</h3>
+          <button class="buttonclose" onclick="close_answer2()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯2 -->
+      <div id="no2" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>系統化運作流程中的「O」，是代表「目標」（Object）之意，有明確且正確的發展目標（O）才能確認後續計畫執行之方向，並不是「原始」的意思喔！</h3>
+          <button class="buttonclose" onclick="close_answer2()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   P圖形 -->
+  <div class="P" style="display:none">P</div>
+
+  <!-- 題目3 -->
+  <div class="quiz">
+    <div class="quiz3" id="quiz3" style="display:none">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>3. 系統化運作流程中的「P」，是代表「計畫」之意。</h2>
+
+      <button class="button1" onclick="answer3_yes()">是</button>
+      <button class="button2" onclick="answer3_no()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析3 -->
+  <div class="answer">
+    <div class="answer3" id="answer3">
+
+      <!--       答對3 -->
+      <div id="yes3" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>「P」是代表「計畫」（Plan）之意，依目標擬定完善計畫（P），包括各項工作、進程及檢核等。</h3>
+          <button class="buttonclose" onclick="close_answer3()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯3 -->
+      <div id="no3" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>系統化運作流程中的「P」，是代表「計畫」（Plan）之意，依目標擬定完善計畫（P），包括各項工作、進程及檢核等。</h3>
+          <button class="buttonclose" onclick="close_answer3()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   D圖形 -->
+  <div class="D" style="display:none">D</div>
+
+  <!-- 題目4 -->
+  <div class="quiz">
+    <div class="quiz4" id="quiz4" style="display:none">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>4. 系統化運作流程中的「D」，是代表「執行」之意。</h2>
+
+      <button class="button1" onclick="answer4_yes()">是</button>
+      <button class="button2" onclick="answer4_no()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析4 -->
+  <div class="answer">
+    <div class="answer4" id="answer4">
+
+      <!--       答對4 -->
+      <div id="yes4" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>「D」是代表「執行」（Do）之意，依計畫確實執行（D）各項工作，並記錄執行過程和結果等相關資料。</h3>
+          <button class="buttonclose" onclick="close_answer4()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯4 -->
+      <div id="no4" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>系統化運作流程中的「D」，是代表「執行」（Do）之意，依計畫確實執行（D）各項工作，並記錄執行過程和結果等相關資料。</h3>
+          <button class="buttonclose" onclick="close_answer4()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   C圖形 -->
+  <div class="C" style="display:none">C</div>
+
+  <!-- 題目5 -->
+  <div class="quiz">
+    <div class="quiz5" id="quiz5" style="display:none">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>5. 系統化運作流程中的「C」，是代表「循環」之意。</h2>
+
+      <button class="button1" onclick="answer5_no()">是</button>
+      <button class="button2" onclick="answer5_yes()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析5 -->
+  <div class="answer">
+    <div class="answer5" id="answer5">
+
+      <!--       答對5 -->
+      <div id="yes5" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>「C」是代表「檢核」（Check）之意，落實檢核（C）各項工作執行過程和結果。</h3>
+          <button class="buttonclose" onclick="close_answer5()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯5 -->
+      <div id="no5" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>系統化運作流程中的「C」，是代表「檢核」（Check）之意，落實檢核各項工作執行過程和結果，並不是「循環」的意思喔！</h3>
+          <button class="buttonclose" onclick="close_answer5()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   A圖形 -->
+  <div class="A" style="display:none">A</div>
+
+  <!-- 題目6 -->
+  <div class="quiz">
+    <div class="quiz6" id="quiz6" style="display:none">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>6. 系統化運作流程中的「A」，是代表「改進」之意。</h2>
+
+      <button class="button1" onclick="answer6_yes()">是</button>
+      <button class="button2" onclick="answer6_no()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析6 -->
+  <div class="answer">
+    <div class="answer6" id="answer6">
+
+      <!--       答對6 -->
+      <div id="yes6" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>「A」是代表「改進」（Act）之意，針對檢核結果進行分析，提出後續改進（A）作法並確實推動。</h3>
+          <button class="buttonclose" onclick="close_answer6()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯6 -->
+      <div id="no6" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>系統化運作流程中的「A」，是代表「改進」（Act）之意，，針對檢核結果進行分析，提出後續改進（A）作法並確實推動。</h3>
+          <button class="buttonclose" onclick="close_answer6()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   時鐘 -->
+  <div id="clock" style="display:none">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/mgmiqlge.json" trigger="loop" style="width:450px;height:450px">
+    </lord-icon>
+  </div>
+
+  <!--   黑板 -->
+  <div class="blackboard">
+    <img src="https://lanny891002.github.io/Quiz/blackboard.png" id="blackboard" style="display:none">
+  </div>
+
+  <!--   粉筆 -->
+  <div class="chalk">
+    <img src="https://lanny891002.github.io/Quiz/chalk.png" id="chalk" onclick="chalk_write()" style="display:none">
+  </div>
+
+  <!--   點擊粉筆以繼續進行 -->
+  <div class="tip-text2" style="display:none">點擊粉筆以繼續進行</div>
+
+  <!-- 題目7 -->
+  <div class="quiz">
+    <div class="quiz7" id="quiz7" style="display:none">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>7. 幼兒園重視以「人」為主，與一般企業組織以「產品」為主不同。</h2>
+
+      <button class="button1" onclick="answer7_yes()">是</button>
+      <button class="button2" onclick="answer7_no()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析7 -->
+  <div class="answer">
+    <div class="answer7" id="answer7">
+
+      <!--       答對7 -->
+      <div id="yes7" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>幼兒園主要是由「人」所組成，而這個「人」不只有幼兒，也包含了教保服務人員、行政人員和社區及家長等，都是不可或缺的。</h3>
+          <button class="buttonclose" onclick="close_answer7()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯7 -->
+      <div id="no7" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>幼兒園與一般企業組織不同喔！企業組織的目標是以產品營利為目標，而幼兒園重視人際的互動，包含了教保服務人員、行政人員和社區及家長等，故幼兒園的品質跟成效也並非用數字來決定。</h3>
+          <button class="buttonclose" onclick="close_answer7()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   桌子 -->
+  <div class="table">
+    <img src="https://lanny891002.github.io/Quiz/table.png" id="table" style="display:none">
+  </div>
+
+  <!--   小書本 -->
+  <div id="book1" style="display:none">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/dxoycpzg.json" trigger="hover" colors="primary:#fad3d1,secondary:#646e78,tertiary:#eeca66,quaternary:#f2f2f2,quinary:#faf9d1" style="width:180px;height:180px">
+    </lord-icon>
+  </div>
+
+  <!--   大書本 -->
+  <div id="book2" onclick="openbook()" style=" display:none">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/dxoycpzg.json" trigger="click" colors="primary:#fad3d1,secondary:#646e78,tertiary:#eeca66,quaternary:#f0e9d8,quinary:#faf9d1" style="width:900px;height:900px">
+    </lord-icon>
+  </div>
+
+  <!--   點擊書本以繼續進行 -->
+  <div class="tip-text3" style="display:none">點擊書本以繼續進行</div>
+
+  <!-- 題目8 -->
+  <div class="quiz">
+    <div class="quiz8" id="quiz8" style="display:none">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>8. 「目標管理」策略主要是塑造一個良好的形象，也包括外部社區社會的連結與互動。</h2>
+
+      <button class="button1" onclick="answer8_no()">是</button>
+      <button class="button2" onclick="answer8_yes()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析8 -->
+  <div class="answer">
+    <div class="answer8" id="answer8">
+
+      <!--       答對8 -->
+      <div id="yes8" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>「目標管理」策略強調「目標」的重要性，依據目標去設定工作項目，有明確且正確的目標，後續計畫執行的方向才能正確。</h3>
+          <button class="buttonclose" onclick="close_answer8()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯8 -->
+      <div id="no8" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>「目標管理」策略主要是在說明「目標」的重要性，而非「形象」。有明確且正確的目標，後續計畫執行的方向才能正確。</h3>
+          <button class="buttonclose" onclick="close_answer8()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   紙張 -->
+  <div class="paper">
+    <img src="https://lanny891002.github.io/Quiz/paper.png" id="paper" style="display:none">
+  </div>
+
+  <!--   清單 -->
+  <div class="list">
+    <img src="https://lanny891002.github.io/Quiz/list.png" id="list" style="display:none">
+  </div>
+
+  <!--   放大鏡 -->
+  <div id="zoom" onclick="zoommove()" style=" display:none">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/hgbzryoa.json" trigger="click" colors="primary:#b26836,secondary:#9cc2f4,tertiary:#e4e4e4,quaternary:#ffffff" style="width:200px;height:200px">
+    </lord-icon>
+  </div>
+
+  <!--   點擊放大鏡以繼續進行 -->
+  <div class="tip-text4" style="display:none">點擊放大鏡以繼續進行</div>
+
+  <!-- 題目9 -->
+  <div class="quiz">
+    <div class="quiz9" id="quiz9" style="display:none">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>9. 幼兒園在解決現有問題之前，必須深入探究問題的根本原因，才能針對問題訂定合適的目標。</h2>
+
+      <button class="button1" onclick="answer9_yes()">是</button>
+      <button class="button2" onclick="answer9_no()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析9 -->
+  <div class="answer">
+    <div class="answer9" id="answer9">
+
+      <!--       答對9 -->
+      <div id="yes9" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>從發現問題並找出問題的根本原因後，才能針對問題訂定改善的方向和目標。</h3>
+          <button class="buttonclose" onclick="close_answer9()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯9 -->
+      <div id="no9" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>若沒有探究問題的根本原因，反而無法明確且有效地解決問題，治標不治本。</h3>
+          <button class="buttonclose" onclick="close_answer9()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   社區 -->
+  <div class="community">
+    <img src="https://lanny891002.github.io/Quiz/community.png" id="community" style="display:none">
+  </div>
+
+  <!-- 題目10 -->
+  <div class="quiz">
+    <div class="quiz10" id="quiz10" style="display:none">
+      <div class="quizcard"></div>
+      <br>
+      <br>
+      <h2>10. SMART為系統化運作之流程。</h2>
+
+      <button class="button1" onclick="answer10_no()">是</button>
+      <button class="button2" onclick="answer10_yes()">否</button>
+
+    </div>
+  </div>
+
+  <!-- 解析10 -->
+  <div class="answer">
+    <div class="answer10" id="answer10">
+
+      <!--       答對10 -->
+      <div id="yes10" style="display:none">
+        <div class="answercard">
+          <h1>O 答對了~</h1>
+          <h3>系統化運作之流程為「OPDCA」，「SMART」是目標管理策略中的一種方法。</h3>
+          <button class="buttonclose" onclick="close_answer10()">x</button>
+        </div>
+      </div>
+
+      <!--       答錯10 -->
+      <div id="no10" style="display:none">
+        <div class="answercard">
+          <h1>X 答錯了！</h1>
+          <h3>系統化運作之流程為「OPDCA」喔！分別是O目標、P計畫、D執行、C檢核和A改進，而「SMART」是目標管理策略中的一種方法，並不是系統化運作流程。</h3>
+          <button class="buttonclose" onclick="close_answer10()">x</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--   點我結算分數 按鈕 -->
+  <button class="button3" onclick="score_count()" style="display:none">點我結算分數</button>
+
+  <!--   等待跑動icon -->
+  <div id="loading" style="display:none">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/rrgqfavh.json" trigger="loop" colors="primary:#848484,secondary:#ebe6ef" style="width:200px;height:200px">
+    </lord-icon>
+  </div>
+
+  <!--   分數 -->
+  <div id="score" style="display:none"></div>
+
+  <!--   結尾彩帶1 -->
+  <div id="congratulations1" style="display:none">
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/tqywkdcz.json" trigger="loop" style="width:350px;height:350px">
+    </lord-icon>
+  </div>
+
+  <!--   結尾彩帶2 -->
+  <div id="congratulations2" style="display:none">
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/tqywkdcz.json" trigger="loop" colors="primary:#66eece,secondary:#c69cf4,tertiary:#f49cc8,quaternary:#f4f19c" style="width:350px;height:350px">
+    </lord-icon>
+  </div>
+
+  <!--   回首頁 按鈕 -->
+  <button class="button4" onclick="location.href='https://lanny891002.github.io/Instructions/examples/easing.html'" style="display:none">回首頁</button>
+
+  <!--   噴彩帶 -->
+  <!--   <div class="ribbon">
+    <img src="https://lanny891002.github.io/Quiz/ribbon.gif" id="community" style="display:block">
+  </div> -->
+
+</body>
+
+</html>
+
+<link rel="stylesheet" href="quiz.css" >
+
+<script src="quiz.js"></script>

@@ -1,0 +1,1338 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+* {
+  font-family: "cwTeXYen", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background: #5f8dc9;
+  transition: 2s;
+  animation-name: bodymove;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  overflow: hidden;
+}
+
+@keyframes bodymove {
+  0% {
+    background: #bae0ff;
+  }
+  25% {
+  }
+  50% {
+  }
+  70% {
+    background: #bae0ff;
+  }
+  100% {
+    background: #5f8dc9;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 34px;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 45px;
+}
+
+.button1 {
+  background: #b8d7f5;
+  border: none;
+  color: white;
+  padding: 15px 38px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 0px;
+  cursor: pointer;
+  position: absolute;
+  top: 110%;
+  left: 48%;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.button1:hover {
+  opacity: 1;
+  top: 111%;
+  box-shadow: 0px 0px 20px 0px rgba(191, 245, 210, 1);
+}
+
+.button2 {
+  background: #b8d7f5;
+  border: none;
+  color: white;
+  padding: 15px 38px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 0px;
+  cursor: pointer;
+  position: absolute;
+  top: 110%;
+  left: 72%;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.button2:hover {
+  opacity: 1;
+  top: 111%;
+  box-shadow: 0px 0px 20px 0px rgba(245, 191, 191, 1);
+}
+
+.button3 {
+  background: #fff;
+  border: none;
+  color: #7399d1;
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 4px 0px;
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  left: 77%;
+  opacity: 1;
+  transition: 0.5s;
+
+  animation-name: button3move;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes button3move {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button3:hover {
+  opacity: 1;
+  top: 77%;
+  box-shadow: 0px 0px 20px 0px rgba(255, 252, 194, 1);
+}
+
+.quizcard {
+  opacity: 0;
+  position: relative;
+  width: 50%;
+  height: 250px;
+  left: 25%;
+  top: 40px;
+  background-color: #f2df7e;
+  border-radius: 8px;
+  box-shadow: 0px 25px 15px -10px rgba(0, 0, 0, 0.05);
+}
+
+.quiz h2 {
+  position: absolute;
+  /*   padding-top: 8%; */
+  width: 50%;
+  left: 40%;
+  top: 10%;
+  text-align: center;
+  color: #fff;
+}
+
+.answercard {
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  left: 25%;
+  top: 5%;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 15px;
+  box-shadow: 0px 25px 15px -10px rgba(0, 0, 0, 0.05);
+  animation-name: answercardmove;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  /*   animation-delay: 5s; */
+}
+
+@keyframes answercardmove {
+  0% {
+    opacity: 0;
+  }
+  25% {
+  }
+  50% {
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.answer h1 {
+  position: relative;
+  padding-top: 15%;
+  width: 90%;
+  left: 5%;
+  top: -55px;
+  text-align: center;
+  color: #ffe44d;
+  font-weight: 800;
+}
+
+.answer h3 {
+  position: relative;
+  padding-top: 5%;
+  width: 80%;
+  left: 10%;
+  top: -70px;
+  text-align: center;
+  color: #456d96;
+}
+
+.buttonclose {
+  background-color: #d68181;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  left: 90%;
+  top: 8%;
+}
+
+#quiz1 {
+  position: relative;
+  left: 0%;
+  top: 35px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#quiz2 {
+  position: relative;
+  left: 0%;
+  top: 35px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#quiz3 {
+  position: relative;
+  left: 0%;
+  top: 35px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#quiz4 {
+  position: relative;
+  left: 0%;
+  top: 35px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#quiz5 {
+  position: relative;
+  left: -30%;
+  top: 35px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#quiz6 {
+  position: relative;
+  left: -30%;
+  top: 35px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#quiz7 {
+  position: relative;
+  left: -15%;
+  top: 37px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#quiz8 {
+  position: relative;
+  width: 80%;
+  left: -4%;
+  top: 37px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#quiz9 {
+  position: relative;
+  width: 80%;
+  left: -1%;
+  top: 37px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.quiz9 h2 {
+  color: #878278;
+}
+
+#quiz10 {
+  position: relative;
+  left: -15%;
+  top: 33px;
+  opacity: 1;
+  animation-name: quizmove;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes quizmove {
+  0% {
+    opacity: 0;
+  }
+  25% {
+  }
+  50% {
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#Nursery-house {
+  width: 25%;
+  position: absolute;
+  left: 10%;
+  top: 18%;
+  transform: rotate(0deg);
+  opacity: 1;
+  transition: 3s;
+
+  animation-name: Nursery-house-move;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes Nursery-house-move {
+  0% {
+    transform: rotate(5deg);
+    left: 37%;
+  }
+  10% {
+    transform: rotate(-5deg);
+    left: 37%;
+  }
+  20% {
+    transform: rotate(5deg);
+    left: 37%;
+  }
+  30% {
+    transform: rotate(-5deg);
+    left: 37%;
+  }
+  40% {
+    transform: rotate(0deg);
+    left: 37%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+.floor {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  left: 0%;
+  top: 85%;
+  background-color: #f2e8d0;
+  opacity: 1;
+  transition: 1s;
+}
+
+.floorup {
+  position: absolute;
+  width: 100%;
+  height: 3%;
+  left: 0%;
+  top: 85%;
+  background-color: #ebdbb5;
+  opacity: 1;
+  transition: 1s;
+}
+
+#box {
+  position: fixed;
+  left: 28%;
+  top: 15%;
+  opacity: 1;
+  transition: 1s;
+
+  animation-name: boxmove;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes boxmove {
+  0% {
+    top: -150%;
+  }
+  40% {
+    top: -150%;
+  }
+  70% {
+    top: 15%;
+  }
+  75% {
+    top: 10%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+
+.tip-text1 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 300;
+  left: 43%;
+  top: 75%;
+  opacity: 0;
+  color: #fff;
+
+  animation-name: tip-text1move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 7s;
+}
+
+@keyframes tip-text1move {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.small-o {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 300;
+  left: 40%;
+  top: 36%;
+  opacity: 0;
+  transition: 1s;
+  color: #fff;
+
+  animation-name: small-opdca-move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.small-p {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 300;
+  left: 45%;
+  top: 40%;
+  opacity: 0;
+  transform: rotate(-45deg);
+  transition: 1s;
+  color: #fff;
+
+  animation-name: small-opdca-move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.small-d {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 300;
+  left: 47%;
+  top: 41%;
+  opacity: 0;
+  transform: rotate(5deg);
+  transition: 1s;
+  color: #fff;
+
+  animation-name: small-opdca-move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.small-c {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 300;
+  left: 50%;
+  top: 38%;
+  opacity: 0;
+  transform: rotate(30deg);
+  transition: 1s;
+  color: #fff;
+
+  animation-name: small-opdca-move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.small-a {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 300;
+  left: 53%;
+  top: 37%;
+  opacity: 0;
+  transform: rotate(-15deg);
+  transition: 1s;
+  color: #fff;
+
+  animation-name: small-opdca-move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes small-opdca-move {
+  0% {
+    opacity: 0;
+  }
+  50% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.O {
+  position: fixed;
+  font-size: 350px;
+  font-weight: 300;
+  left: 13%;
+  top: 30%;
+  opacity: 1;
+  transition: 1s;
+
+  /*   文字漸層色 */
+  background: linear-gradient(to top, #7dd4c3, #bdfff3);
+  background: -webkit-linear-gradient(to top, #7dd4c3, #bdfff3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /*   text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+
+  animation-name: Omove;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes Omove {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(0deg);
+    left: -22%;
+  }
+  100% {
+    transform: rotate(360deg);
+    left: 13%;
+  }
+}
+
+.P {
+  position: fixed;
+  font-size: 350px;
+  font-weight: 300;
+  left: 15%;
+  top: 30%;
+  opacity: 1;
+  transition: 1s;
+
+  /*   文字漸層色 */
+  background: linear-gradient(to top, #8ce698, #c3f7ca);
+  background: -webkit-linear-gradient(to top, #8ce698, #c3f7ca);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /*   text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+
+  animation-name: Pmove;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes Pmove {
+  0% {
+    opacity: 0;
+    top: 0%;
+  }
+  20% {
+    opacity: 0;
+    top: 0%;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    top: 30%;
+  }
+  45% {
+    top: 15%;
+  }
+  60% {
+    top: 30%;
+  }
+  65% {
+    top: 25%;
+  }
+  75% {
+    top: 30%;
+  }
+  80% {
+    top: 28%;
+  }
+  90% {
+    top: 30%;
+  }
+  95% {
+    top: 29%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+.D {
+  position: fixed;
+  font-size: 350px;
+  font-weight: 300;
+  left: 15%;
+  top: 30%;
+  opacity: 1;
+  transition: 2s;
+
+  /*   文字漸層色 */
+  background: linear-gradient(to top, #fcf58b, #fffccf);
+  background: -webkit-linear-gradient(to top, #fcf58b, #fffccf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /*   text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+
+  animation-name: Dmove;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes Dmove {
+  0% {
+    opacity: 0;
+    left: 5%;
+    transform: rotate(-45deg);
+  }
+  5% {
+    opacity: 0;
+    left: 5%;
+    transform: rotate(-45deg);
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    transform: rotate(35deg);
+    left: 20%;
+  }
+  45% {
+    transform: rotate(10deg);
+    left: 16%;
+  }
+  65% {
+    transform: rotate(20deg);
+    left: 18%;
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 15%;
+  }
+}
+
+.C {
+  position: fixed;
+  font-size: 350px;
+  font-weight: 300;
+  left: 65%;
+  top: 30%;
+  opacity: 1;
+  transform: rotate(-360deg);
+  transition: 2s;
+
+  /*   文字漸層色 */
+  background: linear-gradient(to top, #f5c787, #ffe9c9);
+  background: -webkit-linear-gradient(to top, #f5c787, #ffe9c9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /*   text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+
+  animation-name: Cmove;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes Cmove {
+  0% {
+    left: 125%;
+    transform: rotate(0deg);
+  }
+  40% {
+    left: 125%;
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-360deg);
+    left: 65%;
+  }
+  90% {
+    transform: rotate(-340deg);
+    left: 67%;
+  }
+  100% {
+  }
+}
+
+.A {
+  position: fixed;
+  font-size: 350px;
+  font-weight: 300;
+  left: 65%;
+  top: 30%;
+  opacity: 1;
+  transition: 2s;
+
+  /*   文字漸層色 */
+  background: linear-gradient(to top, #f59d87, #ffded6);
+  background: -webkit-linear-gradient(to top, #f59d87, #ffded6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /*   text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+
+  animation-name: Amove;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes Amove {
+  0% {
+    left: 125%;
+  }
+  40% {
+    left: 125%;
+  }
+  70% {
+    left: 65%;
+    transform: rotate(0deg);
+  }
+  80% {
+    left: 63%;
+    transform: rotate(-10deg);
+  }
+  100% {
+  }
+}
+
+#clock {
+  position: fixed;
+  left: 32%;
+  top: 15%;
+  opacity: 1;
+  transition: 1s;
+
+  animation-name: clockmove;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes clockmove {
+  0% {
+    top: 25%;
+    opacity: 0;
+  }
+  50% {
+    top: 25%;
+    opacity: 0;
+  }
+  100% {
+    top: 15%;
+    opacity: 1;
+  }
+}
+
+#blackboard {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  transform: rotate(0deg);
+  opacity: 1;
+  transition: 1.5s;
+
+  animation-name: blackboardmove;
+  animation-duration: 9s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes blackboardmove {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#chalk {
+  width: 7%;
+  position: absolute;
+  left: 65%;
+  top: 79%;
+  transform: rotate(0deg);
+  opacity: 1;
+  transition: 1.5s;
+
+  animation-name: chalkmove;
+  animation-duration: 9s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes chalkmove {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tip-text2 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 300;
+  left: 62%;
+  top: 73%;
+  opacity: 0;
+  color: #fff;
+
+  animation-name: tip-text2move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 9s;
+}
+
+@keyframes tip-text2move {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#table {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 53%;
+  transform: rotate(0deg);
+  opacity: 1;
+  transition: 1.5s;
+
+  animation-name: tablemove;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes tablemove {
+  0% {
+    top: 100%;
+  }
+  40% {
+  }
+  80% {
+  }
+  100% {
+    top: 53%;
+  }
+}
+
+#book1 {
+  position: fixed;
+  width: 100px;
+  left: 55%;
+  top: 49%;
+  opacity: 1;
+  transform: skew(10deg, 355deg);
+  transition: 1.5s;
+
+  animation-name: book1move;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes book1move {
+  0% {
+    top: 100%;
+  }
+  40% {
+  }
+  80% {
+  }
+  100% {
+    top: 49%;
+  }
+}
+
+.tip-text3 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 300;
+  left: 43%;
+  top: 65%;
+  opacity: 0;
+  color: #fff;
+
+  animation-name: tip-text3move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+}
+
+@keyframes tip-text3move {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#book2 {
+  position: fixed;
+  width: 100px;
+  left: 13%;
+  top: -30%;
+  opacity: 1;
+  transition: 1.5s;
+
+  animation-name: book2move;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes book2move {
+  0% {
+    opacity: 0;
+  }
+  40% {
+  }
+  80% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#paper {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 6%;
+  transform: rotate(0deg);
+  opacity: 1;
+  transition: 1.5s;
+
+  animation-name: papermove;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes papermove {
+  0% {
+    left: -55%;
+  }
+
+  100% {
+    left: 25%;
+  }
+}
+
+#list {
+  width: 40%;
+  position: absolute;
+  left: 30%;
+  top: 12%;
+  transform: rotate(0deg);
+  opacity: 1;
+  filter: blur(0px);
+  transition: 1.5s;
+
+  animation-name: listmove;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes listmove {
+  0% {
+    left: -50%;
+  }
+
+  100% {
+    left: 30%;
+  }
+}
+
+#zoom {
+  position: fixed;
+  width: 100px;
+  left: 75%;
+  top: 50%;
+  opacity: 1;
+  transition: 1.5s;
+
+  animation-name: zoommove;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes zoommove {
+  0% {
+    left: -20%;
+  }
+
+  100% {
+    left: 75%;
+  }
+}
+
+.tip-text4 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 300;
+  left: 78%;
+  top: 83%;
+  opacity: 0;
+  color: #fff;
+
+  animation-name: tip-text4move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2.5s;
+}
+
+@keyframes tip-text4move {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#community {
+  width: 110%;
+  position: absolute;
+  left: -5%;
+  top: 30%;
+  transform: rotate(0deg);
+  opacity: 1;
+  filter: blur(0px);
+  transition: 1.5s;
+
+  animation-name: communitymove;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes communitymove {
+  0% {
+    top: 100%;
+  }
+  40% {
+    top: 100%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+#loading {
+  position: absolute;
+  left: 43%;
+  top: 30%;
+  opacity: 1;
+  transition: 1.5s;
+
+  animation-name: loading-move;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes loading-move {
+  0% {
+    opacity: 0;
+  }
+  25% {
+  }
+  50% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#congratulations1 {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  opacity: 1;
+  animation-name: congratulations-move;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#congratulations2 {
+  position: absolute;
+  left: 65%;
+  top: 30%;
+  transform: rotate(-85deg);
+  opacity: 1;
+  animation-name: congratulations-move;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes congratulations-move {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#score {
+  opacity: 1;
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  color: #fff;
+  font-size: 200px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  transition: all 2s;
+
+  animation-name: score-move;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes score-move {
+  0% {
+    top: -20%;
+  }
+  30% {
+    top: -20%;
+  }
+  45% {
+    top: 48%;
+  }
+  55% {
+    top: 38%;
+  }
+  65% {
+    top: 48%;
+  }
+  75% {
+    top: 43%;
+  }
+  85% {
+    top: 48%;
+  }
+  95% {
+    top: 46%;
+  }
+  100% {
+    top: 48%;
+  }
+}
+
+.button4 {
+  background: #fff;
+  border: none;
+  color: #7399d1;
+  padding: 15px 26px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 4px 0px;
+  cursor: pointer;
+  position: absolute;
+  top: 77%;
+  left: 46%;
+  opacity: 1;
+  transition: 0.5s;
+
+  animation-name: button4move;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes button4move {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button4:hover {
+  opacity: 1;
+  top: 77%;
+  box-shadow: 0px 0px 20px 0px rgba(161, 213, 255, 1);
+}
