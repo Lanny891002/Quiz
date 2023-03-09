@@ -93,12 +93,14 @@ var i = 0;
 function answer1_no() {
   yes1.style.display = "none";
   no1.style.display = "block";
+  quiz1.style.display = "none";
   // no1.style.opacity = "1";
 }
 
 function answer1_yes() {
   yes1.style.display = "block";
   no1.style.display = "none";
+  quiz1.style.display = "none";
   i += 10;
 }
 
@@ -188,11 +190,13 @@ function box() {
 function answer2_no() {
   yes2.style.display = "none";
   no2.style.display = "block";
+  quiz2.style.display = "none";
 }
 
 function answer2_yes() {
   yes2.style.display = "block";
   no2.style.display = "none";
+  quiz2.style.display = "none";
   i += 10;
 }
 
@@ -217,11 +221,13 @@ function close_answer2() {
 function answer3_no() {
   yes3.style.display = "none";
   no3.style.display = "block";
+  quiz3.style.display = "none";
 }
 
 function answer3_yes() {
   yes3.style.display = "block";
   no3.style.display = "none";
+  quiz3.style.display = "none";
   i += 10;
 }
 
@@ -254,11 +260,13 @@ function close_answer3() {
 function answer4_no() {
   yes4.style.display = "none";
   no4.style.display = "block";
+  quiz4.style.display = "none";
 }
 
 function answer4_yes() {
   yes4.style.display = "block";
   no4.style.display = "none";
+  quiz4.style.display = "none";
   i += 10;
 }
 
@@ -284,11 +292,13 @@ function close_answer4() {
 function answer5_no() {
   yes5.style.display = "none";
   no5.style.display = "block";
+  quiz5.style.display = "none";
 }
 
 function answer5_yes() {
   yes5.style.display = "block";
   no5.style.display = "none";
+  quiz5.style.display = "none";
   i += 10;
 }
 
@@ -314,11 +324,13 @@ function close_answer5() {
 function answer6_no() {
   yes6.style.display = "none";
   no6.style.display = "block";
+  quiz6.style.display = "none";
 }
 
 function answer6_yes() {
   yes6.style.display = "block";
   no6.style.display = "none";
+  quiz6.style.display = "none";
   i += 10;
 }
 
@@ -400,11 +412,13 @@ function chalk_write() {
 function answer7_no() {
   yes7.style.display = "none";
   no7.style.display = "block";
+  quiz7.style.display = "none";
 }
 
 function answer7_yes() {
   yes7.style.display = "block";
   no7.style.display = "none";
+  quiz7.style.display = "none";
   i += 10;
 }
 
@@ -446,11 +460,13 @@ function openbook() {
 function answer8_no() {
   yes8.style.display = "none";
   no8.style.display = "block";
+  quiz8.style.display = "none";
 }
 
 function answer8_yes() {
   yes8.style.display = "block";
   no8.style.display = "none";
+  quiz8.style.display = "none";
   i += 10;
 }
 
@@ -494,11 +510,13 @@ function zoommove() {
 function answer9_no() {
   yes9.style.display = "none";
   no9.style.display = "block";
+  quiz9.style.display = "none";
 }
 
 function answer9_yes() {
   yes9.style.display = "block";
   no9.style.display = "none";
+  quiz9.style.display = "none";
   i += 10;
 }
 
@@ -537,11 +555,13 @@ function close_answer9() {
 function answer10_no() {
   yes10.style.display = "none";
   no10.style.display = "block";
+  quiz10.style.display = "none";
 }
 
 function answer10_yes() {
   yes10.style.display = "block";
   no10.style.display = "none";
+  quiz10.style.display = "none";
   i += 10;
 }
 

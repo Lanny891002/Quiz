@@ -166,14 +166,14 @@ h3 {
   left: 25%;
   top: 5%;
   background-color: #fff;
-  opacity: 0.9;
+  opacity: 1;
   border-radius: 15px;
   box-shadow: 0px 25px 15px -10px rgba(0, 0, 0, 0.05);
+
   animation-name: answercardmove;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-direction: alternate;
-  /*   animation-delay: 5s; */
 }
 
 @keyframes answercardmove {
@@ -185,7 +185,7 @@ h3 {
   50% {
   }
   100% {
-    opacity: 0.9;
+    opacity: 1;
   }
 }
 
@@ -315,6 +315,10 @@ h3 {
   animation-direction: alternate;
 }
 
+.quiz8 h2 {
+  color: #756e60;
+}
+
 #quiz9 {
   position: relative;
   width: 80%;
@@ -328,7 +332,7 @@ h3 {
 }
 
 .quiz9 h2 {
-  color: #878278;
+  color: #78746d;
 }
 
 #quiz10 {
@@ -340,6 +344,10 @@ h3 {
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-direction: alternate;
+}
+
+.quiz10 h2 {
+  color: #78746d;
 }
 
 @keyframes quizmove {
@@ -1213,7 +1221,7 @@ h3 {
 
 #congratulations1 {
   position: absolute;
-  left: 10%;
+  left: 5%;
   top: 30%;
   opacity: 1;
   animation-name: congratulations-move;
@@ -1224,12 +1232,12 @@ h3 {
 
 #congratulations2 {
   position: absolute;
-  left: 65%;
+  left: 68%;
   top: 30%;
   transform: rotate(-85deg);
   opacity: 1;
   animation-name: congratulations-move;
-  animation-duration: 7s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-direction: alternate;
 }
@@ -1237,14 +1245,17 @@ h3 {
 @keyframes congratulations-move {
   0% {
     opacity: 0;
+    top: 35%;
   }
-  30% {
+  50% {
     opacity: 0;
+    top: 35%;
   }
   50% {
   }
   100% {
     opacity: 1;
+    top: 30%;
   }
 }
 
@@ -1252,11 +1263,15 @@ h3 {
   opacity: 1;
   position: absolute;
   top: 45%;
-  left: 42%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
   color: #fff;
-  font-size: 200px;
+  font-size: 250px;
   letter-spacing: 3px;
   line-height: 50px;
+  text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2);
   transition: all 2s;
 
   animation-name: score-move;
@@ -1267,31 +1282,24 @@ h3 {
 
 @keyframes score-move {
   0% {
-    top: -20%;
+    font-size: 100px;
+    left: 0;
+    opacity: 0;
   }
   30% {
-    top: -20%;
+    font-size: 100px;
+    left: 0;
+    opacity: 0;
   }
-  45% {
-    top: 45%;
+  50% {
+    font-size: 350px;
+    left: 0;
+    opacity: 1;
   }
-  55% {
-    top: 35%;
-  }
-  65% {
-    top: 45%;
-  }
-  75% {
-    top: 40%;
-  }
-  85% {
-    top: 45%;
-  }
-  95% {
-    top: 43%;
-  }
+
   100% {
-    top: 45%;
+    font-size: 250px;
+    left: 0;
   }
 }
 
@@ -1333,6 +1341,6 @@ h3 {
 
 .button4:hover {
   opacity: 1;
-  top: 77%;
+  top: 79%;
   box-shadow: 0px 0px 20px 0px rgba(161, 213, 255, 1);
 }
