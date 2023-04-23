@@ -127,6 +127,16 @@ function close_answer1() {
   tip_text1.style.display = "block";
 }
 
+//箱子掉下音效
+function playAudio_box() {
+  const audio_box = document.createElement("audio");
+  audio_box.src = "https://lanny891002.github.io/Quiz/audio/putting_a_box.mp3";
+  
+  setTimeout(function () {
+     audio_box.play();
+   }, 3800);
+}
+
 // 點擊箱子
 function box() {
   tip_text1.style.display = "none";
@@ -184,6 +194,16 @@ function box() {
 
   quiz2.style.display = "block";
   O.style.display = "block";
+}
+
+//O滾出來的音效
+function playAudio_Omove() {
+  const audio_Omove = document.createElement("audio");
+  audio_Omove.src = "https://lanny891002.github.io/Quiz/audio/O_move.mp3";
+  
+  setTimeout(function () {
+     audio_Omove.play();
+   }, 3500);
 }
 
 // 題目2答案
@@ -288,6 +308,23 @@ function close_answer4() {
   C.style.display = "block";
 }
 
+//D滾出去的音效
+function playAudio_Dmove() {
+  const audio_Dmove = document.createElement("audio");
+  audio_Dmove.src = "https://lanny891002.github.io/Quiz/audio/O_move.mp3";
+  audio_Dmove.play();
+}
+
+//C滾出來的音效
+function playAudio_Cmove() {
+  const audio_Cmove = document.createElement("audio");
+  audio_Cmove.src = "https://lanny891002.github.io/Quiz/audio/O_move.mp3";
+  
+  setTimeout(function () {
+     audio_Cmove.play();
+   }, 2500);
+}
+
 // 題目5答案
 function answer5_no() {
   yes5.style.display = "none";
@@ -318,6 +355,16 @@ function close_answer5() {
 
   quiz6.style.display = "block";
   A.style.display = "block";
+}
+
+//A滾出來的音效
+function playAudio_Amove() {
+  const audio_Amove = document.createElement("audio");
+  audio_Amove.src = "https://lanny891002.github.io/Quiz/audio/A_move.mp3";
+  
+  setTimeout(function () {
+     audio_Amove.play();
+   }, 1600);
 }
 
 // 題目6答案
@@ -378,6 +425,16 @@ function close_answer6() {
   tip_text2.style.display = "block";
 }
 
+//時鐘的音效
+function playAudio_clock() {
+  const audio_clock = document.createElement("audio");
+  audio_clock.src = "https://lanny891002.github.io/Quiz/audio/clock.wav";
+  
+  setTimeout(function () {
+     audio_clock.play();
+   }, 1500);
+}
+
 // 粉筆寫字
 function chalk_write() {
   tip_text2.style.display = "none";
@@ -406,6 +463,16 @@ function chalk_write() {
   }, 2400);
 
   quiz7.style.display = "block";
+}
+
+//粉筆的音效
+function playAudio_chalk() {
+  const audio_chalk = document.createElement("audio");
+  audio_chalk.src = "https://lanny891002.github.io/Quiz/audio/chalk.wav";
+  
+  setTimeout(function () {
+     audio_chalk.play();
+   }, 1500);
 }
 
 // 題目7答案
@@ -456,6 +523,13 @@ function openbook() {
   quiz8.style.display = "block";
 }
 
+//翻書的音效
+function playAudio_book() {
+  const audio_book = document.createElement("audio");
+  audio_book.src = "https://lanny891002.github.io/Quiz/audio/book.mp3";
+  audio_book.play();
+}
+
 // 題目8答案
 function answer8_no() {
   yes8.style.display = "none";
@@ -504,6 +578,13 @@ function zoommove() {
     zoom.style.top = "55%";
     zoom.style.left = "10%";
   }, 3000);
+}
+
+//放大鏡的音效
+function playAudio_zoom() {
+  const audio_zoom = document.createElement("audio");
+  audio_zoom.src = "https://lanny891002.github.io/Quiz/audio/zoom.mp3";
+  audio_zoom.play();
 }
 
 // 題目9答案
@@ -586,6 +667,14 @@ function close_answer10() {
   // lord_icon.style.display = "block";
 }
 
+//大自然的音效
+function playAudio_nature() {
+  const audio_nature = document.createElement("audio");
+  audio_nature.src = "https://lanny891002.github.io/Quiz/audio/nature.wav";
+  audio_nature.play();
+}
+
+//點擊計算分數
 function score_count() {
   button3.style.display = "none";
   loading.style.display = "block";
@@ -623,4 +712,14 @@ function score_count() {
     community.style.display = "none";
     loading.style.display = "none";
   }, 10000);
+}
+
+//分數出現 勝利的音效
+function playAudio_score() {
+  const audio_score = document.createElement("audio");
+  audio_score.src = "https://lanny891002.github.io/Quiz/audio/score.mp3";
+  
+  setTimeout(function () {
+     audio_score.play();
+   }, 9000);
 }

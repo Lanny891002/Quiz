@@ -1,7 +1,6 @@
 <html>
 
 <head>
-
 </head>
 
 <body>
@@ -40,7 +39,7 @@
         <div class="answercard">
           <h1>O 答對了~</h1>
           <h3>透過幼兒園全員參與，有系統地進行統整規劃和逐步落實，才能有效的提升幼兒園優質管理之整體品質。</h3>
-          <button class="buttonclose" onclick="close_answer1()">x</button>
+          <button class="buttonclose" onclick="close_answer1(), playAudio_box()" >x</button>
         </div>
       </div>
 
@@ -50,7 +49,7 @@
           <h1>X 答錯了！</h1>
           <h3>由園長一人自己規劃和決定，不一定是最有效率的方法~園長整合園內成員之力量與所有可運用之資源，有系統地進行統整規劃和逐步落實，才能有效的提升幼兒園優質管理之整體品質。
           </h3>
-          <button class="buttonclose" onclick="close_answer1()">x</button>
+          <button class="buttonclose" onclick="close_answer1(), playAudio_box()">x</button>
         </div>
       </div>
 
@@ -60,7 +59,7 @@
   <!--   箱子 -->
   <div id="box" style="display:none">
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-    <lord-icon src="https://cdn.lordicon.com/gzcbkoye.json" trigger="click" colors="primary:#d59f80" style="width:550px;height:550px" onclick="box()">
+    <lord-icon src="https://cdn.lordicon.com/gzcbkoye.json" trigger="click" colors="primary:#d59f80" style="width:550px;height:550px" onclick="box(), playAudio_Omove()">
     </lord-icon>
   </div>
 
@@ -184,7 +183,7 @@
         <div class="answercard">
           <h1>O 答對了~</h1>
           <h3>「D」是代表「執行」（Do）之意，依計畫確實執行（D）各項工作，並記錄執行過程和結果等相關資料。</h3>
-          <button class="buttonclose" onclick="close_answer4()">x</button>
+          <button class="buttonclose" onclick="close_answer4(), playAudio_Dmove(), playAudio_Cmove()">x</button>
         </div>
       </div>
 
@@ -193,7 +192,7 @@
         <div class="answercard">
           <h1>X 答錯了！</h1>
           <h3>系統化運作流程中的「D」，是代表「執行」（Do）之意，依計畫確實執行（D）各項工作，並記錄執行過程和結果等相關資料。</h3>
-          <button class="buttonclose" onclick="close_answer4()">x</button>
+          <button class="buttonclose" onclick="close_answer4(), playAudio_Dmove(), playAudio_Cmove()">x</button>
         </div>
       </div>
 
@@ -226,7 +225,7 @@
         <div class="answercard">
           <h1>O 答對了~</h1>
           <h3>「C」是代表「檢核」（Check）之意，落實檢核（C）各項工作執行過程和結果。</h3>
-          <button class="buttonclose" onclick="close_answer5()">x</button>
+          <button class="buttonclose" onclick="close_answer5(), playAudio_Amove()">x</button>
         </div>
       </div>
 
@@ -235,7 +234,7 @@
         <div class="answercard">
           <h1>X 答錯了！</h1>
           <h3>系統化運作流程中的「C」，是代表「檢核」（Check）之意，落實檢核各項工作執行過程和結果，並不是「循環」的意思喔！</h3>
-          <button class="buttonclose" onclick="close_answer5()">x</button>
+          <button class="buttonclose" onclick="close_answer5(), playAudio_Amove()">x</button>
         </div>
       </div>
 
@@ -268,7 +267,7 @@
         <div class="answercard">
           <h1>O 答對了~</h1>
           <h3>「A」是代表「改進」（Act）之意，針對檢核結果進行分析，提出後續改進（A）作法並確實推動。</h3>
-          <button class="buttonclose" onclick="close_answer6()">x</button>
+          <button class="buttonclose" onclick="close_answer6(), playAudio_clock()">x</button>
         </div>
       </div>
 
@@ -277,7 +276,7 @@
         <div class="answercard">
           <h1>X 答錯了！</h1>
           <h3>系統化運作流程中的「A」，是代表「改進」（Act）之意，，針對檢核結果進行分析，提出後續改進（A）作法並確實推動。</h3>
-          <button class="buttonclose" onclick="close_answer6()">x</button>
+          <button class="buttonclose" onclick="close_answer6(), playAudio_clock()">x</button>
         </div>
       </div>
 
@@ -298,7 +297,7 @@
 
   <!--   粉筆 -->
   <div class="chalk">
-    <img src="https://lanny891002.github.io/Quiz/chalk.png" id="chalk" onclick="chalk_write()" style="display:none">
+    <img src="https://lanny891002.github.io/Quiz/chalk.png" id="chalk" onclick="chalk_write(), playAudio_chalk()" style="display:none">
   </div>
 
   <!--   點擊粉筆以繼續進行 -->
@@ -356,7 +355,7 @@
   </div>
 
   <!--   大書本 -->
-  <div id="book2" onclick="openbook()" style=" display:none">
+  <div id="book2" onclick="openbook(), playAudio_book()" style=" display:none">
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
     <lord-icon src="https://cdn.lordicon.com/dxoycpzg.json" trigger="click" colors="primary:#fad3d1,secondary:#646e78,tertiary:#eeca66,quaternary:#f0e9d8,quinary:#faf9d1" style="width:900px;height:900px">
     </lord-icon>
@@ -415,7 +414,7 @@
   </div>
 
   <!--   放大鏡 -->
-  <div id="zoom" onclick="zoommove()" style=" display:none">
+  <div id="zoom" onclick="zoommove(), playAudio_zoom()" style=" display:none">
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
     <lord-icon src="https://cdn.lordicon.com/hgbzryoa.json" trigger="click" colors="primary:#ffffff,secondary:#4bb3fd,tertiary:#b26836" style="width:200px;height:200px">
     </lord-icon>
@@ -491,7 +490,7 @@
         <div class="answercard">
           <h1>O 答對了~</h1>
           <h3>系統化運作之流程為「OPDCA」，「SMART」是目標管理策略中的一種方法。</h3>
-          <button class="buttonclose" onclick="close_answer10()">x</button>
+          <button class="buttonclose" onclick="close_answer10(), playAudio_nature()">x</button>
         </div>
       </div>
 
@@ -500,7 +499,7 @@
         <div class="answercard">
           <h1>X 答錯了！</h1>
           <h3>系統化運作之流程為「OPDCA」喔！分別是O目標、P計畫、D執行、C檢核和A改進，而「SMART」是目標管理策略中的一種方法，並不是系統化運作流程。</h3>
-          <button class="buttonclose" onclick="close_answer10()">x</button>
+          <button class="buttonclose" onclick="close_answer10(), playAudio_nature()">x</button>
         </div>
       </div>
 
@@ -508,7 +507,7 @@
   </div>
 
   <!--   點我結算分數 按鈕 -->
-  <button class="button3" onclick="score_count()" style="display:none">點我結算分數</button>
+  <button class="button3" onclick="score_count(), playAudio_score()" style="display:none">點我結算分數</button>
 
   <!--   等待跑動icon -->
   <div id="loading" style="display:none">
